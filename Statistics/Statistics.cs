@@ -4,9 +4,9 @@ using System.Collections.Generic;
 namespace Statistics
 {
     public class Stats{
-        private average{ get; set;}
-        private max{ get; set;}
-        private min{ get; set;}
+        private float average{ get; set;}
+        private float max{ get; set;}
+        private float min{ get; set;}
     }
     public class StatsComputer
     {
