@@ -11,10 +11,10 @@ namespace Statistics
     public class StatsComputer
     {
         public Stats CalculateStatistics(List<float> numbers) {
-            float _avg = numbers.Count > 0 ? numbers.Average() : float.NaN;
-            float _max = numbers.Count > 0 ? numbers.Max(): float.NaN;
-            float _min = numbers.Count > 0 ? numbers.Min(): float.NaN;
-            return new Stats(){average = _avg, max = _max, min = _min };
+            if(numbers.Count > 0){
+                return new Stats(){average = numbers.Average(), max = numbers.Max(), min = numbers.Min() };
+            }
+            return new Stats(){average = float.NaN, max = float.NaN, min = float.NaN };
         }
     }
 }
