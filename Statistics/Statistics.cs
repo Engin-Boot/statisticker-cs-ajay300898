@@ -5,9 +5,9 @@ using System.Linq;
 namespace Statistics
 {
     public class Stats{
-        private float average{ get; set;}
-        private float max{ get; set;}
-        private float min{ get; set;}
+        public float average;
+        public float max;
+        public float min;
         public Stats(float _avg, float _max, float _min){
             average = _avg;
             max = _max;
